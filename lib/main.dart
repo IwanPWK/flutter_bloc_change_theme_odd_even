@@ -20,7 +20,8 @@ class MyApp extends StatelessWidget {
           return MaterialApp(
             title: 'Event Payload',
             debugShowCheckedModeBanner: false,
-            theme: state.appTheme == AppTheme.light
+            theme: state.appTheme ==
+                    AppTheme.light //you can use context.watch, but with builder
                 ? ThemeData.light()
                 : ThemeData.dark(),
             home: const MyHomePage(),
